@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(to bottom, #e0f7fa, #a4c8f1);
+}
+/* USER JS STYLES */
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.user-card:hover {
+  transform: scale(1.1);
+}
+
+.user-id {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333333;
+}
+
+.user-nick-name {
+  font-size: 16px;
+  font-style: italic;
+  color: #666666;
+  margin-top: 5px;
+}
+
+/* POSTS JS STYLES */
+
+#post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 350px;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+}
+
+.post-id {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.post-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* BUTTON STYLE */
+.btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn a {
+  color: #ffffff;
+}
+
+.user-card .btn,
+.post-card .btn {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.btn-post {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  text-align: center;
+}
+.btn-post:hover {
+  background-color: #0056b3;
+}
+
+.btn-post a {
+  color: #ffffff;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
